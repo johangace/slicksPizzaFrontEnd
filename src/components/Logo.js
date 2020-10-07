@@ -67,7 +67,7 @@ const LogoStyles = styled.div`
     }
     &.l {
       --rotate: 2deg;
-      --scale: 1.4;
+      --scale: 1;
       --translateX: 0.05em;
       --translateY: -0.05em;
     }
@@ -77,14 +77,14 @@ const LogoStyles = styled.div`
       --translateX: 0.1em;
     }
     &.c {
-      --rotate: 3deg;
+      --rotate: 0deg;
       --scale: 0.9;
       --translateX: 0.1em;
-      --translateY: 0.23em;
+      --translateY: 0.1em;
     }
     &.k {
-      --rotate: -12deg;
-      --scale: 1.2;
+      --rotate: -1deg;
+      --scale: 0.9;
       --translateX: 0.06em;
     }
     &.apos {
@@ -105,13 +105,13 @@ export default function Logo() {
         <span className="est">EST 1994</span>
         <h1>
           <span className="slicks">
-            <span className="letter S">S</span>
-            <span className="letter l">l</span>
-            <span className="letter i">i</span>
-            <span className="letter c">c</span>
-            <span className="letter k">k</span>
-            <span className="letter apos">'</span>
-            <span className="letter s">s</span>
+            <span className="letter S">M</span>
+            <span className="letter l">i</span>
+            <span className="letter i">a</span>
+            <span className="letter c">m</span>
+            <span className="letter k">i</span>
+            {/* <span className="letter apos">'</span>
+            <span className="letter s">s</span> */}
           </span>
           <span className="slices">slices</span>
         </h1>

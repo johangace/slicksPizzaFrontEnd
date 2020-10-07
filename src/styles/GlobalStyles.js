@@ -9,7 +9,10 @@ const GlobalStyles = createGlobalStyle`
     --yellow: #ffc600;
     --white: #fff;
     --grey: #efefef;
+     --MiamiPink: #f890e7 ;
+    --MiamiBlue:#0bd3d3;
   }
+  
   html {
     background-image: url(${bg});
     background-size: 450px;
