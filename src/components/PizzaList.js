@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql, Link, navigate } from 'gatsby'
 import Img from 'gatsby-image'
 import styled from 'styled-components'
-import ToppingsFilter from './ToppingsFilter';
+
 
 const PizzaGridStyles = styled.div`
   display: grid;
@@ -44,7 +44,7 @@ function SinglePizza({ pizza }) {
 export default function PizzaList({ pizzas }) {
   return (
     <div> 
-    <ToppingsFilter/>
+   
     <PizzaGridStyles>
       
       {pizzas.map((pizza) => (

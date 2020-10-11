@@ -1,5 +1,4 @@
 import dotenv from 'dotenv'
-
 dotenv.config({path: '.env'})
 
 // sass console.log( process.env.SANITY_TOKEN)

@@ -1,23 +1,24 @@
 import { graphql } from 'gatsby'
 import React from 'react'
 import PizzaList from '../components/PizzaList'
+import ToppingsFilter from '../components/ToppingsFilter';
 
-export default function PizzasPage({ data }) {
-  // props.data.pizzas
-  console.log(data.pizzas)
+
+
+export default function PizzasPage({ data, pageContext }) {
   const pizzas = data.pizzas.nodes
   return (
     <div>
-      {' '}
+     <ToppingsFilter activeTopping= {pageContext.topping} />
       <PizzaList pizzas={pizzas} />{' '}
     </div>
   )
 }
 
 export const query = graphql`
-  query PizzaQuery($topping: [String]) {
+  query PizzaQuery($toppingRegex: String) {
     pizzas: allSanityPizza(
-      filter: { toppings: { elemMatch: { name: { in: $topping } } } }
+      filter: { toppings: { elemMatch: { name: { regex: $toppingRegex } } } }
     ) {
       nodes {
         name
