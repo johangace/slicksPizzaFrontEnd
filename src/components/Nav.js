@@ -94,6 +94,7 @@ export default function Nav() {
         <li>
           <Link to="/order">Order Ahead!</Link>
         </li>
+        
       </ul>
     </NavStyles>
   );

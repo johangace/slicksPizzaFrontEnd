@@ -1,1 +1,1 @@
-{"data":{"pizzas":{"nodes":[]}},"pageContext":{"id":"White Sauce","toppingRegex":"/White Sauce/i"}}
+{"data":{"pizzas":{"nodes":[]}},"pageContext":{"topping":"White Sauce","toppingRegex":"/White Sauce/i"}}
