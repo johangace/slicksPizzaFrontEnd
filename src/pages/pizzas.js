@@ -1,12 +1,11 @@
-import { graphql } from 'gatsby'
-import React from 'react'
-import PizzaList from '../components/PizzaList'
-import ToppingsFilter from '../components/ToppingsFilter'
-import SEO from '../components/SEO'
-import { Link } from 'gatsby'
+import { graphql, Link } from 'gatsby';
+import React from 'react';
+import PizzaList from '../components/PizzaList';
+import ToppingsFilter from '../components/ToppingsFilter';
+import SEO from '../components/SEO';
 
 export default function PizzasPage({ data, pageContext }) {
-  const pizzas = data.pizzas.nodes
+  const pizzas = data.pizzas.nodes;
   return (
     <div>
       <SEO
@@ -15,15 +14,18 @@ export default function PizzasPage({ data, pageContext }) {
             ? `Pizzas With ${pageContext.topping}`
             : `All Pizzas`
         }
-      ></SEO>
+      />
       <Link to="/beers">
         {' '}
-        <h4> Check Out Our Beers List!! </h4>
+        <h3 style={{ margin: '50px 0', color: 'var(--red)' }}>
+          {' '}
+          Check Out Our Beers List!!🍺
+        </h3>
       </Link>
       <ToppingsFilter activeTopping={pageContext.topping} />
       <PizzaList pizzas={pizzas} />{' '}
     </div>
-  )
+  );
 }
 
 export const query = graphql`
@@ -53,4 +55,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

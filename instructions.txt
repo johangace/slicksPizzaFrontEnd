@@ -1,2 +1,28 @@
-gatsby-config.js
+gatsby-config.js SEO
 --    'gatsby-plugin-react-helmet'
+
+
+
+Context 
+--
+
+
+
+serverless functions
+-- create netlify.toml
+-- run netlify dev
+- functions folder in root;  folder and file SAME name inside
+- http://localhost:8888/.netlify/functions/functionFolderNAME
+
+
+
+
+
+
+
+Nodemailer for Email services
+
+--create email fast
+https://ethereal.email/
+Ethereal is a fake SMTP service, mostly aimed at Nodemailer users (but not limited to). 
+It's a completely free anti-transactional email service where messages never get delivered.
