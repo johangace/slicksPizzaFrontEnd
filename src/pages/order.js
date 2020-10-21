@@ -3,8 +3,8 @@ import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import SEO from '../components/SEO';
 import useForm from '../utils/useForm';
-import calculatePizzaPrice from '../utils/calcuatePizzaPrice';
 import formatMoney from '../utils/formatMoney';
+import calculatePizzaPrice from '../utils/calculatePizzaPrice';
 import OrderStyles from '../styles/OrderStyles';
 import MenuItemStyles from '../styles/MenuItemStyles';
 import usePizza from '../utils/usePizza';
@@ -18,6 +18,7 @@ export default function OrderPage({ data }) {
     email: '',
     mapleSyrup: '',
   });
+
   const {
     order,
     addToOrder,
