@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer>
       {' '}
-      <p> &copy; Slick's Slices {new Date().getFullYear()}</p>
+      <p> &copy; Miami Slices {new Date().getFullYear()}</p>
     </footer>
   );
 }
