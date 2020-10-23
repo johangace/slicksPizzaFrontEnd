@@ -1,2 +1,3 @@
 # slicksPizzaFrontEnd
-Gatsby.js Frontend &amp;  https://github.com/johangace/slicksPizzaBackend
+Gatsby.js App  https://miamislices.netlify.app/
+GraphQL Sanity.io Backend  https://github.com/johangace/slicksPizzaBackend
