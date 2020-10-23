@@ -1,10 +1,17 @@
+
+--sanity graphql deploy production
+For graphql APi endpoints
+--sanity graphql list
+--sanity deploy
+
+
+
 gatsby-config.js SEO
 --    'gatsby-plugin-react-helmet'
 
 
 
-Context 
---
+
 
 
 

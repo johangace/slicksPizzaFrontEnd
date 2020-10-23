@@ -1,7 +1,5 @@
-import react from 'react';
-import SEO from '../components/SEO'
+import React from 'react';
 
-
-export default function ErrorNotFound() {
-  return <p> hey this page does not exist</p>;
+export default function FourOhFourPage() {
+  return <p>Hey - That page doesn't exist!!!</p>;
 }
